@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        is-multidex="true"
+        jar="C:\Users\Glory\.gradle\caches\modules-2\files-2.1\com.fasterxml.jackson.core\jackson-databind\2.2.2\3c8f6018eaa72d43b261181e801e6f8676c16ef6\jackson-databind-2.2.2.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.1"
+        sha1="3c8f6018eaa72d43b261181e801e6f8676c16ef6">
+        <dex dex="E:\Project\Referensi Coding android\Kobalputra-master\app\build\intermediates\transforms\dex\debug\folders\1000\10\jackson-databind-2.2.2_da023c87455082234e47a78143fd85d25640af78\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Glory\AppData\Local\Android\sdk\extras\android\m2repository\com\android\support\support-annotations\26.0.0-alpha1\support-annotations-26.0.0-alpha1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.1"
+        sha1="023ee503b631f69511e335a061ea008f8da60f40">
+        <dex dex="E:\Project\Referensi Coding android\Kobalputra-master\app\build\intermediates\transforms\dex\debug\folders\1000\10\support-annotations-26.0.0-alpha1_f7c4fcd250fca37f0af44e709b75506f11a726a0\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="E:\Project\Referensi Coding android\Kobalputra-master\app\build\intermediates\incremental-classes\debug\instant-run-bootstrap.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.1"
+        sha1="40888b4a424d8d5eea1648902f4fd7ef8c5cad56">
+        <dex dex="E:\Project\Referensi Coding android\Kobalputra-master\app\build\intermediates\transforms\dex\debug\folders\1000\10000\instant-run-bootstrap_991e63efa3f586120e842bdb2c4339268bb44444\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Glory\.android\build-cache\9d838c898fb41f1cfa4cb451a8b76526bc890056\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.1"
+        sha1="8df0e365e40beb151bc42dee20817721a6cab7b0">
+        <dex dex="E:\Project\Referensi Coding android\Kobalputra-master\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_9bbe7e108486105ce94c2f9f4405092f277e3cda\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Glory\.android\build-cache\1828ec4c12c991dcbbd6f1642b05e876de23d594\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.1"
+        sha1="9cca2818594cc5348806d6662133491e7ea0fa8d">
+        <dex dex="E:\Project\Referensi Coding android\Kobalputra-master\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_cc94110f70f1f1643997eca35126b2694850ce9b\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Glory\.android\build-cache\10f14fc0cea3acd2a592801a0b97f1cc6e7cffa5\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.1"
+        sha1="6addaba208e21c6da776d0ca75b6b23a6ccd5499">
+        <dex dex="E:\Project\Referensi Coding android\Kobalputra-master\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_a52795335fec809f6bd380e814efa0110d31a73e\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Glory\.android\build-cache\aef770ac4b8ba0d590cfa986d5677ec14dbaae1f\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.1"
+        sha1="eb0d830e3eabb9deb9ec44869cf7ac7ea1ad794c">
+        <dex dex="E:\Project\Referensi Coding android\Kobalputra-master\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_62e4faf097261929e1bde2cdb9592daac8c27874\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Glory\.android\build-cache\51f22901eb8a2fb23f18f018db9a218d5e58adf7\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.1"
+        sha1="952944218ecedea1554a513dec0c14d570642843">
+        <dex dex="E:\Project\Referensi Coding android\Kobalputra-master\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_d4904e0bcdbb8c6462d209ad8bbbde660868a8fc\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Glory\.android\build-cache\325b4a1efcede07221583cdf63c3c2bc8e3bd76b\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.1"
+        sha1="c4f45092eee6cdf1a5dbd597b2b6819be652ce2e">
+        <dex dex="E:\Project\Referensi Coding android\Kobalputra-master\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_071f4819fb7c0558c7d0c98a56de2ed56afbac9b\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="E:\Project\Referensi Coding android\Kobalputra-master\app\build\intermediates\incremental-runtime-classes\debug\instant-run.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.1"
+        sha1="3be78ebc2706b2e1fe2f12d5726887a92d6c183b">
+        <dex dex="E:\Project\Referensi Coding android\Kobalputra-master\app\build\intermediates\transforms\dex\debug\folders\1000\10000\instant-run_e1be375b000211aeb2113b2ba3d3ed1f75db22cd\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Glory\.android\build-cache\ab98e091fca81fe9918036e065a92e634a9df9d1\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.1"
+        sha1="27777b3cad3c20b1acab19f6e37fe3e03371bf6e">
+        <dex dex="E:\Project\Referensi Coding android\Kobalputra-master\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_f79f7ea05e66cf608adfeb44a9233b02f10e2266\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Glory\.android\build-cache\8f382648fd70d0bfa3983214f24c25df6e130548\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.1"
+        sha1="18d31838aa4fcc768a8a0516e22cc13b94655d89">
+        <dex dex="E:\Project\Referensi Coding android\Kobalputra-master\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_291bec8f46a733778335cc7072e5850e2b6ebb85\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Glory\.android\build-cache\1591fc928d39f30725d844b7144c297b90f94fc5\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.1"
+        sha1="756f6297eef79784f5e356dcd4f39865028b2bd0">
+        <dex dex="E:\Project\Referensi Coding android\Kobalputra-master\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_8769039d8902416ad2eb1119b5268b4b37744eb9\classes.dex" />
+    </item>
+
+</items>
