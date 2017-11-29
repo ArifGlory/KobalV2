@@ -12,6 +12,10 @@
             android:title="Permintaan Sewa" />
 
         <item
+            android:id="@+id/nav_list_chat"
+            android:title="Chat" />
+
+        <item
             android:id="@+id/nav_logoutDriver"
             android:title="Logout" />
 

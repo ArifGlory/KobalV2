@@ -67,8 +67,20 @@
         <activity
             android:name=".DetailPermintaan"
             android:label="Detail Permintaan" />
-        <activity android:name=".BantuanActivity"
-            android:label="Bantuan"></activity>
+        <activity
+            android:name=".BantuanActivity"
+            android:label="Bantuan" />
+        <activity
+            android:name=".PilihOrigin"
+            android:label="Lokasi Berangkat" />
+        <activity
+            android:name=".PilihDestination"
+            android:label="Lokasi Tujuan" />
+        <activity android:name=".ChatKeDriver" />
+        <activity
+            android:name=".ListChatActivity"
+            android:label="List Chat" />
+        <activity android:name=".Adapter.ChatKeUser"></activity>
     </application>
 
 </manifest>

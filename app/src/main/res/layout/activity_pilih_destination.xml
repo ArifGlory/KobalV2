@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:fillViewport="true">
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="putra.kobal.PilihDestination"
+    android:background="@color/colorPrimaryDark">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Lokasi Berangkat"
+            android:layout_marginTop="10dp"
+            android:textSize="20sp"
+            android:textColor="#fff"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nama Tempat Berangkat"
+            android:layout_marginTop="15dp"
+            android:textSize="16sp"
+            android:id="@+id/txtNamaAsal"
+            android:textColor="#fff"
+            />
+
+        <TextView
+            android:id="@+id/txtAlamatAsal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Alamat Asal"
+            android:layout_marginTop="10dp"
+            android:textSize="16sp"
+            android:textColor="#fff"
+            />
+
+        <include layout="@layout/item_divider" />
+
+        <Button
+            android:id="@+id/btnPilihTujuan"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="15sp"
+            android:padding="10dp"
+            android:text="Pilih Lokasi Tujuan"
+            android:background="@drawable/btn_back1"
+            android:layout_marginTop="20dp"
+            />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nama Tempat Tujuan"
+            android:layout_marginTop="15dp"
+            android:textSize="17sp"
+            android:id="@+id/txtNamaTujuan"
+            android:textColor="#fff"
+            />
+
+
+        <TextView
+            android:id="@+id/txtAlamatTujuan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Alamat Asal"
+            android:layout_marginTop="10dp"
+            android:textSize="17sp"
+            android:textColor="#fff"
+            />
+
+        <TextView
+            android:id="@+id/txtJarak"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Estimasi Jarak"
+            android:layout_marginTop="10dp"
+            android:textSize="17sp"
+            android:textColor="#fff"
+            />
+
+        <TextView
+            android:id="@+id/txtWaktu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Estimasi Waktu"
+            android:layout_marginTop="10dp"
+            android:textSize="17sp"
+            android:textColor="#fff"
+            />
+
+        <TextView
+            android:id="@+id/txtBiaya"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Estimasi Biaya"
+            android:layout_marginTop="10dp"
+            android:textSize="17sp"
+            android:textColor="#fff"
+            />
+
+        <Button
+            android:id="@+id/btnKirim"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="15sp"
+            android:padding="10dp"
+            android:text="Kirim"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/btn_back1"
+            android:layout_marginTop="20dp"
+            android:enabled="false"
+            />
+
+
+
+
+    </LinearLayout>
+
+
+
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_gravity="center|bottom"
+        android:layout_centerInParent="true"
+        android:layout_marginBottom="20dp"
+        android:visibility="gone" />
+</RelativeLayout>
+
+
+        </ScrollView>
+
+
+
+</RelativeLayout>

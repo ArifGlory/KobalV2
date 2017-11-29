@@ -37,6 +37,7 @@ public class RecycleAdapteraListSewa extends RecyclerView.Adapter<RecycleViewHol
     public static List<String> list_plat= new ArrayList();
     public static List<String> list_kode = new ArrayList();
     public static List<String> list_key = new ArrayList();
+    public static List<String> list_email = new ArrayList();
     Firebase Kref;
 
     public RecycleAdapteraListSewa(final Context context) {
@@ -56,17 +57,20 @@ public class RecycleAdapteraListSewa extends RecyclerView.Adapter<RecycleViewHol
                    list_plat.clear();
                    list_kode.clear();
                    list_key.clear();
+                   list_email.clear();
 
                    for (DataSnapshot child : dataSnapshot.getChildren()){
 
                        String namaPemilik = (String) child.child("nama").getValue();
                        String plat = (String) child.child("plat_nomr").getValue();
                        String kode = (String) child.child("kode").getValue();
+                       String email = (String) child.child("email").getValue();
                        String key = child.getKey();
                        list_namaPemilik.add(namaPemilik);
                        list_plat.add(plat);
                        list_kode.add(kode);
                        list_key.add(key);
+                       list_email.add(email);
                    }
                    ListSewaAngkot.progressBar.setVisibility(View.GONE);
 
@@ -134,6 +138,7 @@ public class RecycleAdapteraListSewa extends RecyclerView.Adapter<RecycleViewHol
             i.putExtra("platKirim",list_plat.get(position).toString());
             i.putExtra("kodeKirim",list_kode.get(position).toString());
             i.putExtra("keyKirim",list_key.get(position).toString());
+            i.putExtra("emailKirim",list_email.get(position).toString());
             context.startActivity(i);
 
         }

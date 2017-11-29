@@ -40,7 +40,6 @@ public class RegisterDriver extends AppCompatActivity {
     Double lon = 105.257662;
     String status = "off";
 
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -91,7 +90,6 @@ public class RegisterDriver extends AppCompatActivity {
 
             }
         });
-
 
     }
 

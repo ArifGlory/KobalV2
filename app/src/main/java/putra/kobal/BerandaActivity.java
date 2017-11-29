@@ -31,6 +31,7 @@ public class BerandaActivity extends AppCompatActivity
     Intent i;
     private FirebaseAuth fAuth;
     private FirebaseAuth.AuthStateListener fStateListener;
+    public static String id;
 
     public static String nama;
 
@@ -43,6 +44,8 @@ public class BerandaActivity extends AppCompatActivity
         setContentView(R.layout.activity_beranda);
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
+
+        id = fAuth.getCurrentUser().getEmail();
 
 
 

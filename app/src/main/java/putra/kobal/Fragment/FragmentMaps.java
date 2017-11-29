@@ -225,14 +225,7 @@ public class FragmentMaps extends Fragment implements OnMapReadyCallback, Direct
             return;
         }
         mMap.setMyLocationEnabled(true);
-        mMap.setOnMyLocationButtonClickListener(new GoogleMap.OnMyLocationButtonClickListener() {
-            @Override
-            public boolean onMyLocationButtonClick() {
 
-                Toast.makeText(getActivity().getApplication(),"lat : "+latitud+"& Lon :"+longitud , Toast.LENGTH_SHORT).show();
-                return true;
-            }
-        });
 
 
         //  mMap.addMarker(new MarkerOptions().position(lampung).title("lokasi"));

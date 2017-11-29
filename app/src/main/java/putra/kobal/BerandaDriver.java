@@ -52,6 +52,7 @@ public class BerandaDriver extends AppCompatActivity
     Location lokasiterahir;
     private Double Klat, Klon;
     Firebase Kref,K2ref;
+    public static String id;
 
 
     @Override
@@ -65,6 +66,7 @@ public class BerandaDriver extends AppCompatActivity
         setSupportActionBar(toolbar);
         Kref = new Firebase("https://kobal-d8264.firebaseio.com/").child("driver").child(LoginDriver.keyDriver);
 
+        id = fAuth.getCurrentUser().getEmail();
 
         FragmentHomeDriver homeDriver = new FragmentHomeDriver();
         android.support.v4.app.FragmentTransaction fragmentTransaction = getSupportFragmentManager().beginTransaction();
@@ -171,6 +173,10 @@ public class BerandaDriver extends AppCompatActivity
 
         } else if (id == R.id.nav_list_sewa) {
             i = new Intent(getApplicationContext(),PermintaanSewa.class);
+            startActivity(i);
+        }
+        else if (id == R.id.nav_list_chat) {
+            i = new Intent(getApplicationContext(),ListChatActivity.class);
             startActivity(i);
         }
         else if (id == R.id.nav_logoutDriver) {

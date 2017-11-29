@@ -55,6 +55,21 @@
         android:id="@+id/txtKode"/>
 
     <Button
+        android:id="@+id/btnChatDriver"
+        android:layout_marginTop="15dp"
+        android:layout_width="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_height="wrap_content"
+        android:textSize="15sp"
+        android:padding="10dp"
+        android:onClick="keChatDriver"
+        android:text="Chat Driver"
+        android:layout_below="@+id/txtKode"
+        android:textColor="#000"
+        android:background="@drawable/btn_back1"
+        />
+
+    <Button
         android:id="@+id/btnSewa"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"

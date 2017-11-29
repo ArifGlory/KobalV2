@@ -1,4 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="fill_parent"
@@ -57,6 +63,69 @@
         android:layout_centerHorizontal="true"
         android:id="@+id/txtEmail"/>
 
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_below="@+id/txtEmail"
+        android:layout_marginTop="10dp"
+        android:padding="10dp"
+        android:id="@+id/line1">
+
+        <include layout="@layout/item_divider" />
+
+        <TextView
+            android:id="@+id/txtJenis"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Jenis Angkutan"
+            android:layout_marginTop="10dp"
+            android:textSize="16sp"
+            android:textColor="#fff"
+            />
+
+        <TextView
+            android:id="@+id/txtAlamatAsal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Alamat Asal"
+            android:layout_marginTop="10dp"
+            android:textSize="16sp"
+            android:textColor="#fff"
+            />
+
+        <TextView
+            android:id="@+id/txtAlamatTujuan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Alamat Tujuan"
+            android:layout_marginTop="10dp"
+            android:textSize="16sp"
+            android:textColor="#fff"
+            />
+
+        <TextView
+            android:id="@+id/txtJarak"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Jarak"
+            android:layout_marginTop="10dp"
+            android:textSize="16sp"
+            android:textColor="#fff"
+            />
+
+        <TextView
+            android:id="@+id/txtBiaya"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Estimasi Biaya"
+            android:layout_marginTop="10dp"
+            android:textSize="16sp"
+            android:textColor="#fff"
+            />
+
+    </LinearLayout>
+
     <Button
         android:id="@+id/btnHapus"
         android:layout_width="match_parent"
@@ -64,7 +133,7 @@
         android:textSize="15sp"
         android:padding="10dp"
         android:text="Hapus Notifikasi"
-        android:layout_alignParentBottom="true"
+        android:layout_below="@+id/line1"
         android:textColor="#000"
         android:background="@drawable/btn_back1"
         />
@@ -80,3 +149,4 @@
 
 </RelativeLayout>
     </ScrollView>
+</RelativeLayout>

@@ -25,7 +25,7 @@ public class DetailAngkot extends AppCompatActivity {
     Button btn_sewa;
     Firebase Kref,Uref;
     ProgressBar progressBar;
-    private String nope,userID;
+    private String nope,userID,nama,email;
     SewaModel sewaModel;
 
     private FirebaseAuth fAuth;
@@ -41,10 +41,11 @@ public class DetailAngkot extends AppCompatActivity {
         userID = fAuth.getCurrentUser().getUid();
 
         i = getIntent();
-        String nama = i.getStringExtra("namaKirim");
+        nama = i.getStringExtra("namaKirim");
         String plat = i.getStringExtra("platKirim");
         String kode = i.getStringExtra("kodeKirim");
-        String key = i.getStringExtra("keyKirim");
+        final String key = i.getStringExtra("keyKirim");
+        email = i.getStringExtra("emailKirim");
 
         Kref = new Firebase("https://kobal-d8264.firebaseio.com/").child("driver").child(key).child("zlist");
         Uref = new Firebase("https://kobal-d8264.firebaseio.com/").child("user").child(userID);
@@ -89,13 +90,14 @@ public class DetailAngkot extends AppCompatActivity {
             @Override
             public void onClick(View view) {
 
-                sewaModel = new SewaModel(fAuth.getCurrentUser().getDisplayName(),
+               /* sewaModel = new SewaModel(fAuth.getCurrentUser().getDisplayName(),
                         nope,
                         fAuth.getCurrentUser().getEmail());
 
                 Kref.push().setValue(sewaModel);
-                Toast.makeText(getApplicationContext(),"Permintaan Sewa Dikirim Ke Driver",Toast.LENGTH_LONG).show();
-                i = new Intent(getApplicationContext(),ListSewaAngkot.class);
+                Toast.makeText(getApplicationContext(),"Permintaan Sewa Dikirim Ke Driver",Toast.LENGTH_LONG).show();*/
+                i = new Intent(getApplicationContext(),PilihOrigin.class);
+                i.putExtra("key",key);
                 startActivity(i);
 
             }
@@ -116,5 +118,12 @@ public class DetailAngkot extends AppCompatActivity {
     }
 
 
+    public void keChatDriver(View view) {
 
+        i = new Intent(getApplicationContext(),ChatKeDriver.class);
+        i.putExtra("namaDriver",nama);
+        i.putExtra("to_id",email);
+        startActivity(i);
+
+    }
 }

@@ -39,6 +39,12 @@ public class RecycleAdapteraListPermintaan extends RecyclerView.Adapter<RecycleV
     public static List<String> list_email = new ArrayList();
     public static List<String> list_nope = new ArrayList();
     public static List<String> list_key = new ArrayList();
+    public static List<String> list_alamatAsal = new ArrayList();
+    public static List<String> list_alamatTujuan = new ArrayList();
+    public static List<String> list_biaya = new ArrayList();
+    public static List<String> list_jarak = new ArrayList();
+    public static List<String> list_waktu = new ArrayList();
+    public static List<String> list_jenis = new ArrayList();
     Firebase Kref;
 
     public RecycleAdapteraListPermintaan(final Context context) {
@@ -59,6 +65,12 @@ public class RecycleAdapteraListPermintaan extends RecyclerView.Adapter<RecycleV
                     list_email.clear();
                     list_key.clear();
                     list_nope.clear();
+                    list_alamatAsal.clear();
+                    list_alamatTujuan.clear();
+                    list_biaya.clear();
+                    list_jarak.clear();
+                    list_waktu.clear();
+                    list_jenis.clear();
 
 
                     for (DataSnapshot child : dataSnapshot.getChildren()){
@@ -67,12 +79,24 @@ public class RecycleAdapteraListPermintaan extends RecyclerView.Adapter<RecycleV
                         String namaPenyewa = (String) child.child("nama").getValue();
                         String email = (String) child.child("email").getValue();
                         String nope = (String) child.child("nope").getValue();
+                        String alamatA = (String) child.child("alamatAsal").getValue();
+                        String alamatT = (String) child.child("alamatTujuan").getValue();
+                        String biaya = (String) child.child("biaya").getValue();
+                        String jarak = (String) child.child("jarak").getValue();
+                        String waktu = (String) child.child("waktu").getValue();
+                        String jenis = (String) child.child("jenis").getValue();
                         String key = child.getKey();
 
                         list_namaPenyewa.add(namaPenyewa);
                         list_nope.add(nope);
                         list_key.add(key);
                         list_email.add(email);
+                        list_alamatTujuan.add(alamatT);
+                        list_alamatAsal.add(alamatA);
+                        list_biaya.add(biaya);
+                        list_jarak.add(jarak);
+                        list_waktu.add(waktu);
+                        list_jenis.add(jenis);
                     }
 
                     PermintaanSewa.progressBar.setVisibility(View.GONE);
@@ -145,6 +169,12 @@ public class RecycleAdapteraListPermintaan extends RecyclerView.Adapter<RecycleV
             i.putExtra("nope",list_nope.get(position).toString());
             i.putExtra("email",list_email.get(position).toString());
             i.putExtra("key",list_key.get(position).toString());
+            i.putExtra("alamatA",list_alamatAsal.get(position).toString());
+            i.putExtra("alamatT",list_alamatTujuan.get(position).toString());
+            i.putExtra("biaya",list_biaya.get(position).toString());
+            i.putExtra("jarak",list_jarak.get(position).toString());
+            i.putExtra("waktu",list_waktu.get(position).toString());
+            i.putExtra("jenis",list_jenis.get(position).toString());
             context.startActivity(i);
 
         }
